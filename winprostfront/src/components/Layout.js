@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import '../index.css';
 
 // 공통 컴포넌트 적용(Header, Footer)
 const Layout = ({children}) =>{
