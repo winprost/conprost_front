@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
 
 return (
@@ -15,9 +17,9 @@ return (
     <div className="row">
         <div className="nav">
             <div className="col-3">
-                <a href="/#" className="logo"> 
+                <Link to ="/" className="logo"> 
                     <img src={logo} alt="logo" width="100%"/> 
-                </a>
+                </Link>
             </div>
             <div className="col-6">
                 <form method="GET" action="/project" name="projectIdx">

@@ -6,6 +6,7 @@ import banner3 from '../images/banner3.png';
 const Main = ()=>{
 
   return (
+    <div>
     <div className="container">
         <div className="row">
             <div className="col-12">
@@ -45,6 +46,7 @@ const Main = ()=>{
               </div>
             </div>
         </div>
+      </div>
   )
 }
 
