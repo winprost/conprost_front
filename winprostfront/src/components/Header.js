@@ -27,13 +27,13 @@ return (
                 </form>
             </div>
             <div className="col-1">
-                <a href="/#">About</a>
+                <Link to="/#">About</Link>
             </div>
             <div className="col-1">
-                <a href="/#">Login</a>
+                <Link to="/#">Login</Link>
             </div>
             <div className="col-1">
-                <a href="/#">Mypage</a>
+                <Link to="/mypage">Mypage</Link>
             </div>
         </div>
     </div>
