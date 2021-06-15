@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import menu from '../images/menu.png';
 import logo from '../images/logo.png';
-import './Header.scss';
+import './contestDetail.scss';
 
 
-let mn = styled.div`
-    margin-left: 10px;
-    
-`;
 
 
-const Header = () => {
+const ContestDetail = () => {
     let [downmenu,CHdownmenu] = useState(false); 
 
 return (
@@ -19,7 +14,7 @@ return (
 
 
 
-<header classNameName='header'>
+<header classNameName='contestDetail'>
     <div>
         <div className="row top">
         <div className="col-sm-9"></div>
@@ -51,13 +46,13 @@ return (
                 </form>
             </div>
             <div className="col-sm-1">
-                <a href="/#">Team</a>
-            </div>
-            <div className="col-sm-1">
-                <a href="/#">Mypage</a>
+                <a href="/#">About</a>
             </div>
             <div className="col-sm-1">
                 <a href="/#">Login</a>
+            </div>
+            <div className="col-sm-1">
+                <a href="/#">Mypage</a>
             </div>
         </div>
 
@@ -73,40 +68,10 @@ return (
 function Dropdown(){
     return (
         <dropdown className="dropdown-content">
-            <h5>
-            <a href="#"> <strong>유승현</strong>님 안녕하세요! </a>
-            </h5>
-            <ul>
-            <li>
-                contents
-            </li>
-            <li>
-                <a href="#">공모전</a>
-            </li>
-            <li>
-                <a href="#">프로젝트</a>
-            </li>
-            </ul>
-            <ul>
-            <li>
-                Users
-            </li>
-            <li>
-                <a href="#">Front-end</a>
-            </li>
-            <li>
-                <a href="#">Server</a>
-            </li>
-            <li>
-                <a href="#">Android</a>
-            </li>
-            <li>
-                <a href="#">Ios</a>
-            </li>
-            </ul>
+           
 
         </dropdown>
     )
 }
 
-export default Header
+export default ContestDetail;
