@@ -12,6 +12,8 @@ return (
         <div className="col-1">회원가입</div>
         <div className="col-1">문제신고</div>
         <div className="col-1">알림</div>
+
+        
     </div>
     <hr/>
     <div className="row">
