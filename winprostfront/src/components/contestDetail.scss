@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.contest{
+    margin: 70px 60px;
+    text-align: left;
+}
+
+
+// 공모전 페이지
+
+.contestDetail{
+    margin-bottom: 70px;
+    
+}
+
+.dDay{
+    padding: 5px;
+    background-color: #FFBE58;
+    color: #fff;
+    font-weight: 700;
+}
+h2,h4{
+    padding-bottom: 20px;
+}
+
+
+.contestContent{
+    display: flex;
+}
+
+.contestPoster{
+    margin-left: 30px;
+    width :200px;
+    height:250px;
+    overflow: hidden;
+    border : 1px solid slategrey;
+}
+.contestPoster img{
+    width:100%;
+    object-fit: cover;
+
+}
+
+.contestData{
+    margin-left: 50px;
+    width: 400px;
+
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.dataSub{
+    margin: 0 30px 10px 0 ;
+}
+.dataTitle{
+    font-weight: 700;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+button a{
+    margin-right: 10px;
+    font-weight: 700;
+}
+.contestData button a{
+    padding :10px;
+    border-radius: 5px;
+    background-color: #94979C;
+    color:#fff;
+}
+
+// 팀원 모집글들
+.recruitTitle{
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #94979C;
+}
+
+.recruitBox{
+    
+}
