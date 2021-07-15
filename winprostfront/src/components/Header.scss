@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+// 
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+// dropdown 더럽;; 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+dropdown {
+    display: flex;
+}
+dropdown ul{
+    position: relative;
+
+}
+.dropdown-button {
+width: 40px;
+padding: 0;
+border: none;
+border-radius: 5px;
+overflow: hidden;
+background-color: transparent;
+cursor: pointer;
+}
+
+.dropdown-button:hover {
+opacity: 0.75;
+}
+
+.dropdown-button:focus,
+.dropdown-button:active {
+box-shadow: none;
+outline: none;
+}
+
+.dropdown-button img {
+width: 100%;
+height: auto;
+}
+
+dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15);
+    transition: transform 200ms ease-in;
+    }
+
+dropdown.active {
+display: block;
+}
+
+dropdown:hover {
+transform: translateY(2px);
+}
+
+dropdown::before {
+content: "";
+position: absolute;
+top: -18px;
+right: 12px;
+width: 0;
+height: 0;
+border-top: 9px solid transparent;
+border-left: 8px solid transparent;
+border-bottom: 9px solid #fff;
+border-right: 8px solid transparent;
+}
+
+dropdown h5,
+dropdown a {
+font-size: 14px;
+line-height: 1.5;
+color: #24292e;
+text-decoration: none;
+}
+
+dropdown h5 {
+padding: 8px 16px 16px;
+border-bottom: 1px solid #e1e4e8;
+font-weight: 500;
+}
+
+dropdown h5 strong {
+font-weight: 700;
+}
+
+dropdown h5 strong:hover {
+opacity: 0.5;
+}
+
+dropdown ul {
+list-style-type: none;
+padding: 8px 0;
+}
+
+dropdown ul:last-child {
+border-top: 1px solid #e1e4e8;
+}
+
+.dropdown-menu ul a {
+display: block;
+padding: 8px 16px;
+font-size: 14px;
+line-height: 1.5;
+color: #24292e;
+text-decoration: none;
+}
+
+.dropdown-menu ul a:hover {
+color: #fff;
+background-color: #0366d6;
+}
+
+
+
+
+
+// 서치바
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+.search {
+
+    
+    &__title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        color: #ff8b88;
+    }
+    
+    &__input {
+        width: 100%;
+        padding: 12px 24px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: #575756;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        
+        &::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        &:hover,
+        &:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+    }
+}
