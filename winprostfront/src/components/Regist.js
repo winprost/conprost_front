@@ -1,25 +1,12 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import styled from 'styled-components';
-
-const StyleForm = styled.form`
-  @media (min-width: 700px) {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex: auto;
-  }
-`;
-
+import Container from 'react-bootstrap/Container';
 
 const Regist = () => {
   return (
-    <>
-    <StyleForm>
-      <Form>
+    <Container>
+      <Form style={{ width:'400px', margin:'auto'}} className="align-items-center">
         <Form.Group controlId="formBasicId">
           <Form.Label>아이디</Form.Label>
           <Form.Control type="string" placeholder="아이디를 입력해주세요." />
@@ -35,12 +22,12 @@ const Regist = () => {
           <Form.Control type="string" placeholder="닉네임을 입력해주세요." />
         </Form.Group>
 
-          <Button variant="warning" type="submit" height="2.25rem">
+          <Button variant="warning" type="submit" height="2.25rem" 
+          style={{margin:'0px 0px 0px 50px', width:"300px"}}>
             Submit
           </Button>
       </Form>
-    </StyleForm>
-    </>
+    </Container>
   )
 }
 

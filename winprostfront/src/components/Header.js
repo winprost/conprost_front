@@ -17,9 +17,6 @@ const Header = () => {
 
 return (
 
-
-
-
 <header classNameName='header'>
     <div>
         <div className="row top"></div>
@@ -35,6 +32,7 @@ return (
                 <Link to ="/" className="logo"> 
                     <img src={logo} alt="logo" width="100%"/> 
                 </Link>
+            </div>
             <div className="col-sm-1" className="dropdown" onClick={ ()=> {CHdownmenu(!downmenu)}}>
                 <mn><img src={menu} alt="dropdown-menu" width="30px" className="dropdowndtn"></img></mn>
                 {
@@ -55,6 +53,15 @@ return (
                     <input type="text" placeholder="search" className="search__input"  />
                 </form>
             </div>
+            <div className="col-1">
+                <Link to="/#">About</Link>
+            </div>
+            <div className="col-1">
+                <Link to="/#">Login</Link>
+            </div>
+            <div className="col-1">
+                <Link to="/mypage">Mypage</Link>
+            </div>
             <div className="col-sm-1">
                 <a href="/#">Team</a>
             </div>
@@ -65,12 +72,8 @@ return (
                 <a href="/#">Login</a>
             </div>
         </div>
-
     </div>
     <hr/>
-
-
-    </div>
 </header>
 )
 }
