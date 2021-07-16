@@ -2,34 +2,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+.teamBoard{
+    margin: 30px;
+}
   
 h2{
     font-weight: 700;
     color:#282c34;
-    margin-bottom: 30px;
 }
 
 .data{
-    display: flex;
-    flex-direction: row;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 7fr 200px;
+    margin: 40px 20px;
+    max-width: 1100px;
 }
 
 // 게시판 리스트
 .noticeList{
     display: flex;
     flex-direction: column;
+    max-width: 700px;
     text-align: left;
-    width: 300px;
-    margin: 0 20px;
-    padding: 24px 0;
-
+    
 }
 .notice{
+    margin-bottom: 20px;
     border-bottom: 1px solid #eee;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(238, 238, 238);
-    margin-bottom: 20px;
 }
 
 .notice a{
@@ -39,6 +42,7 @@ h2{
 .noticeIcons{
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
 }
 .notice img{
     width: 10px;
@@ -56,39 +60,75 @@ h2{
 }
 
 
-// flex 두번 쓰지 않기!
+
+
 
 // 유저 프로필
+article{
+    margin-left: 20px;
+}
+.teamTitle{
+    margin-bottom: 20px;
+    text-align: left;
+}
 .teamMemberList{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     text-align: left;
 }
 .teamMember{
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 10px;
 
     
 }
 
 
 .user-photo {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 25px;
     border: 1px solid #eaeaea;
 }
 
 .user-photo img{
-    width: 100%;
-    height: 75px;
+    width: 50px;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .user-data{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
+.user-name{
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 560px) {
+    .data{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        margin-left: 0;
+    }
+ 
+    .teamMemberList{
+        display: flex;
+        margin-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+
+}
