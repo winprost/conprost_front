@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+h2{
+    font-weight: 700;
+    color:#282c34;
+    margin-bottom: 30px;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+}
+
+// 게시판 리스트
+.noticeList{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 300px;
+    margin: 0 20px;
+    padding: 24px 0;
+
+}
+.notice{
+    border-bottom: 1px solid #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 238, 238);
+    margin-bottom: 20px;
+}
+
+.notice a{
+    display: block;
+    color:#282c34;
+}
+.noticeIcons{
+    display: flex;
+    justify-content: space-between;
+}
+.notice img{
+    width: 10px;
+}
+
+.noticeTitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.noticeContent{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+// flex 두번 쓰지 않기!
+
+// 유저 프로필
+.teamMemberList{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.teamMember{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    
+}
+
+
+.user-photo {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 1px solid #eaeaea;
+}
+
+.user-photo img{
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.user-data{
+    margin-left: 20px;
+}
+

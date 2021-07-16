@@ -12,7 +12,7 @@
 // 공모전 페이지
 
 .contestDetail{
-    margin-bottom: 70px;
+    margin: 70px auto;
     
 }
 
@@ -28,15 +28,18 @@ h2,h4{
 
 
 .contestContent{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 7fr;
 }
 
 .contestPoster{
     margin-left: 30px;
-    width :200px;
-    height:250px;
+    // background-image: url('링크주소');
+    // background-size: 100% 100%;
+    // width :200px;
+    height:450px;
     overflow: hidden;
-    border : 1px solid slategrey;
+    border : 1px solid rgb(70, 72, 73);
 }
 .contestPoster img{
     width:100%;
@@ -74,17 +77,74 @@ button a{
 .contestData button a{
     padding :10px;
     border-radius: 5px;
-    background-color: #94979C;
-    color:#fff;
+    background-color: #FFBE58;
+    color: white;
 }
 
 // 팀원 모집글들
+
 .recruitTitle{
-    font-size: 24px;
     padding-bottom: 10px;
+    padding-left: 10px;
     border-bottom: 2px solid #94979C;
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.recruitBox{
-    
+.recruit{
+    padding-top: 20px;
+    border-bottom: 0.5px solid #eee;
 }
+
+.boxTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+.bottom{
+    margin: 20px 0;
+
+
+}
+.bottom img{
+    padding-left: 10px;
+    height: 12px;
+    width: auto;  
+}
+
+
+@media screen and (min-width: 800px){
+
+    .recruitBox{
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    
+    }
+    .recruit:nth-child(odd) {
+        border-right: 1px solid #eee;
+    }
+    .recruit:nth-child(even) {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .contestContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contestPoster{
+        margin-bottom: 30px;
+        height: 300px;
+    }
+    .contestData{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto;
+    }
+
+}
+
+ 
