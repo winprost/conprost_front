@@ -72,38 +72,40 @@ return (
         </div>
 
 
-        <div className="teamMemberList">
-        
-            <div className="teamMember">
-                <div className="user-photo">
-                <img src={profile1}  alt="user-profile-photo" />
-                </div>   
-                <div className="user-data">
-                    <h4 className="user-name">유승현</h4>
-                    <p className="user-position">Front-end</p>
+        <article>
+            <h4 className="teamTitle">팀원 </h4>
+            <div className="teamMemberList">
+                <div className="teamMember">
+                    <div className="user-photo">
+                    <img src={profile1}  alt="user-profile-photo" />
+                    </div>   
+                    <div className="user-data">
+                        <h4 className="user-name">유승현</h4>
+                        <p className="user-position">Front-end</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="teamMember">
-                <div className="user-photo">
-                <img src={profile1}  alt="user-profile-photo" />
-                </div>   
-                <div className="user-data">
-                    <h4 className="user-name">유승현</h4>
-                    <p className="user-position">Front-end</p>
+                <div className="teamMember">
+                    <div className="user-photo">
+                    <img src={profile1}  alt="user-profile-photo" />
+                    </div>   
+                    <div className="user-data">
+                        <h4 className="user-name">유승현</h4>
+                        <p className="user-position">Front-end</p>
+                    </div>
                 </div>
-            </div>
 
-            <div className="teamMember">
-                <div className="user-photo">
-                <img src={profile1}  alt="user-profile-photo" />
-                </div>   
-                <div className="user-data">
-                    <h4 className="user-name">유승현</h4>
-                    <p className="user-position">Front-end</p>
+                <div className="teamMember">
+                    <div className="user-photo">
+                    <img src={profile1}  alt="user-profile-photo" />
+                    </div>   
+                    <div className="user-data">
+                        <h4 className="user-name">유승현</h4>
+                        <p className="user-position">Front-end</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
             
 
     
