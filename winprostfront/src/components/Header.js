@@ -76,7 +76,7 @@ function Dropdown(){
                 contents
             </li>
             <li>
-                <a href="#">공모전</a>
+            <Link to="/contest">공모전</Link>
             </li>
             <li>
                 <a href="#">프로젝트</a>
