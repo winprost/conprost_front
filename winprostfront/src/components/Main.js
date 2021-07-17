@@ -53,7 +53,7 @@ const Main = ()=>{
         <div className="contestList">
           <div className="header">
             <h2 className="contestTitle">공모전</h2>
-            <Link to="/#" className="more">더보기</Link>
+            <Link to="/contest" className="more">더보기</Link>
           </div>
           <div className="contestList">
               
