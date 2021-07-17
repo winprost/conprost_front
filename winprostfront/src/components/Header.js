@@ -49,7 +49,7 @@ return (
                 </form>
             </div>
             <div className="col-1">
-                <Link to="/#">Team</Link>
+                <Link to="/team">Team</Link>
             </div>
             <div className="col-1">
                 <Link to="/mypage">Mypage</Link>
