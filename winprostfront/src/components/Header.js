@@ -53,12 +53,14 @@ return (
             </div>
             <div className="col-1">
                 <Link to="/login">Login</Link>
+                <Link to="/team">Team</Link>
             </div>
             <div className="col-1">
                 <Link to="/mypage">Mypage</Link>
             </div>
             <div className="col-1">
                 <Link to="/userlist">UserList</Link>
+                <Link to="/#">Login</Link>
             </div>
         </div>
     </div>
