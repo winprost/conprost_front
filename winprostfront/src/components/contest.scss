@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contestPage{
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 0 80px;
+}
+
+
+.contestPageTitle{
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.contestPageCell{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.bottomContest{
+    display: flex;
+    justify-content: space-between;
+}
+.contestPageCell .bookmark{
+    height: 30px;
+    width: auto;
+}
+
+.topContest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

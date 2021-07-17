@@ -8,6 +8,7 @@ import Regist from '../components/Regist';
 import MyPage from '../components/MyPage';
 import TeamBoard from '../components/teamBoard';
 import ContestDetail from '../components/contestDetail';
+import Contest from '../components/contest';
 
 
 const Pages = () =>{
@@ -19,6 +20,8 @@ const Pages = () =>{
       <Route exact path="/mypage" component={MyPage} />
       <Route exact path="/team" component={TeamBoard} />
       <Route exact path="/contestDe" component={ContestDetail} />
+      <Route exact path="/contest" component={Contest} />
+    
       </Layout>
     </Router>
   );

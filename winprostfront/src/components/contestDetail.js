@@ -26,7 +26,7 @@ const ContestDetail = () => {
             
             <div className="contestData">
                 <h4 className="host"><strong>삼성리서치</strong></h4>
-                <div className="data">
+                <div className="conData">
                     <p className="dataSub"> <span className="dataTitle">참여대상 </span> 대학생 </p>
                     <p className="dataSub"> <span className="dataTitle">기관형태 </span>  대기업 </p>
                     <p className="dataSub"> <span className="dataTitle">시상규모 </span> 1000만원 </p>
