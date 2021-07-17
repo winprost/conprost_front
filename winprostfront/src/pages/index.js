@@ -11,7 +11,7 @@ import userList from '../components/userList';
 import TeamBoard from '../components/teamBoard';
 import ContestDetail from '../components/contestDetail';
 import Contest from '../components/contest';
-
+import teamDetail from '../components/teamDetail'
 
 const Pages = () =>{
   return (
@@ -25,6 +25,7 @@ const Pages = () =>{
       <Route exact path="/contestDe" component={ContestDetail} />
       <Route exact path="/contest" component={Contest} />
       <Route exact path="/userlist" component={userList} />
+      <Route exact path="/teamDetail" component={teamDetail} />
       </Layout>
     </Router>
   );

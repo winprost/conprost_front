@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.detail-contest{
+  width: 100%;
+  margin:0 auto;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+// 공모전 페이지
+
+.dDay{
+  padding: 5px;
+  background-color: #FFBE58;
+  color: #fff;
+  font-weight: 700;
+}
+h2,h4{
+  padding-bottom: 20px;
+}
+
+.detail-contestDetail{
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.detail-contestPoster{
+  height:100%;
+  width: 100%;
+  padding:20px;
+}
+
+.task-header-box{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  > .item{
+    width: 50%;
+  }
+}
+
+.contestPoster img{
+  width:100%;
+  object-fit: cover;
+}
+
+.detail-conData{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.dataSub{
+  margin: 0 30px 10px 0 ;
+}
+.dataTitle{
+  font-weight: 700;
+}
+
+
+button{
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+button a{
+  margin-right: 10px;
+  font-weight: 700;
+}
+.contestData button a{
+  padding :10px;
+  border-radius: 5px;
+  background-color: #FFBE58;
+  color: white;
+}
+
+// 팀원 모집글들
+
+.recruitTitle{
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.team-recruit{
+  padding: 20px;
+}
+
+.boxTitle{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bottom{
+  display: flex;
+  margin: 20px 0;
+  max-width: 400px;
+}
+
+
+.team-leader-container{
+  width: 100%;
+}
+
+.team-lader-box{
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.leader-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leader-img{
+  > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.leader-title{
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  left: 20%;
+  top:0px;
+}
+.join-team-btn{
+  height: 40px;
+  width: 70px;
+  color: #fff;
+  font-weight: bold;
+}
+.ripple{
+  border-radius: 10px;
+  height: 40px;
+  width: 70px; 
+  background-color: rgb(255, 190, 88);
+}
+.crown{
+  color: #59341b;
+}
+
+.leader-title{
+  padding: 5px;
+  background-color: #FFBE58;
+  color: #fff;
+  font-weight: 700;
+}
+
+.leader-spec{
+  margin-left: 100px;
+}
+
+.leader-spec-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .leader-item{
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+}
+
+.right{
+  width: 250px;
+}
+
+.team-recruitBox{
+  width: 100%;
+  
+}
+
+.team-recruit{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 800px){
+
+  .recruitBox{
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+  
+  }
+
+  .recruit:nth-child(even) {
+      padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 560px){
+
+  .contestContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .contestPoster{
+      margin-bottom: 30px;
+      height: 300px;
+  }
+  .contestData{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: auto;
+  }
+
+}
+
