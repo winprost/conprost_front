@@ -1,5 +1,6 @@
 import React from 'react';
 import './userList.scss'
+import img from '../images/profile.jpg'
 
 const userList = () => {
   return (
@@ -19,34 +20,46 @@ const userList = () => {
       <main>
         <div className="main-container">
           <div className="main-flex">
+            <div className="apadding-item">
             <div className="item">
-              <div className="profile-box">
-                <div className="left-box">
-                  <div className="left-flex">
-                    <div className="user-img">
-                      <div className="img">1</div>
+                <div className="user-profile-box">
+                  <div className="left-box">
+                    <div className="left-flex">
+                      <div className="user-img">
+                        <img src={img}/>
+                      </div>
+                      <div className="user-ct">4 기여도</div>
                     </div>
-                    <div className="user-ct">1</div>
+                  </div>
+                  <div className="right-box">
+                    <div className="right-flex">
+                      <div className="item">이름: 유승현</div>
+                      <div className="item">기술: 프론트엔드</div>
+                      <div className="item">깃헙: 깃헙@깃헙</div>
+                    </div>
                   </div>
                 </div>
-                <div className="right-box">
-                  <div className="right-flex">
-                    <div className="item">1</div>
-                    <div className="item">2</div>
-                    <div className="item">3</div>
-                  </div>
+                <div className="msg-box">
+                  <div className="follow">♥3</div>
+                  <button className="message">쪽지</button>
                 </div>
-              </div>
-              <div className="msg-box">
-                <div className="message"></div>
-                <div className="follow"></div>
-              </div>
             </div>
-            <div className="item">2</div>
-            <div className="item">3</div>
-            <div className="item">4</div>
-            <div className="item">5</div>
-            <div className="item">6</div>
+            </div>
+            <div className="apadding-item">
+              <div className="item">2</div>
+            </div>
+            <div className="apadding-item">
+              <div className="item">3</div>
+            </div>
+            <div className="apadding-item">
+              <div className="item">4</div>
+            </div>
+            <div className="apadding-item">
+              <div className="item">5</div>
+            </div>
+            <div className="apadding-item">
+              <div className="item">6</div>
+            </div>
           </div>
         </div>
       </main>
