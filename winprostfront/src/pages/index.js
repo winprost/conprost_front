@@ -7,6 +7,7 @@ import Main from '../components/Main';
 import Regist from '../components/Regist';
 import MyPage from '../components/MyPage';
 import Login from '../components/login';
+import userList from '../components/userList';
 import TeamBoard from '../components/teamBoard';
 import ContestDetail from '../components/contestDetail';
 import Contest from '../components/contest';
@@ -23,7 +24,7 @@ const Pages = () =>{
       <Route exact path="/team" component={TeamBoard} />
       <Route exact path="/contestDe" component={ContestDetail} />
       <Route exact path="/contest" component={Contest} />
-    
+      <Route exact path="/userlist" component={userList} />
       </Layout>
     </Router>
   );

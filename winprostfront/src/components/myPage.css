@@ -57,6 +57,7 @@
 
 .flex-box{
   display: flex;
+  align-items: center;
   max-width: 600px;
   margin: 0 auto;
   height: 50px;
