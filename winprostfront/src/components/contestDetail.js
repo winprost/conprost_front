@@ -61,7 +61,7 @@ const ContestDetail = () => {
                     <p className="boxContent">진짜 잘해볼 사람 구해요 우리팀 짱짱맨 들어올테면 들어와봐라</p>
                     <div className="bottom">
                         <span className="members"> 모집인원  1/2 </span>
-                        <img  src={bookmark} />
+                        <img  className="bookmark" src={bookmark} />
                     </div>
                 </div>
                 <div className="recruit">
