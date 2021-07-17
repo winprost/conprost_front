@@ -57,6 +57,9 @@ return (
             <div className="col-1">
                 <Link to="/mypage">Mypage</Link>
             </div>
+            <div className="col-1">
+                <Link to="/userlist">UserList</Link>
+            </div>
         </div>
     </div>
     <hr/>

@@ -7,6 +7,7 @@ import Main from '../components/Main';
 import Regist from '../components/Regist';
 import MyPage from '../components/MyPage';
 import Login from '../components/login';
+import userList from '../components/userList';
 
 const Pages = () =>{
   return (
@@ -16,6 +17,7 @@ const Pages = () =>{
       <Route exact path="/regist" component={Regist} />
       <Route exact path="/mypage" component={MyPage} />
       <Route exact path="/login" component={Login} />
+      <Route exact path="/userlist" component={userList} />
       </Layout>
     </Router>
   );
