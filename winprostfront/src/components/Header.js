@@ -28,11 +28,6 @@ return (
     <hr/>
     <div className="row" >
         <div className="nav">
-            <div className="col-3">
-                <Link to ="/" className="logo"> 
-                    <img src={logo} alt="logo" width="100%"/> 
-                </Link>
-            </div>
             <div className="col-sm-1" className="dropdown" onClick={ ()=> {CHdownmenu(!downmenu)}}>
                 <mn><img src={menu} alt="dropdown-menu" width="30px" className="dropdowndtn"></img></mn>
                 {
@@ -57,19 +52,10 @@ return (
                 <Link to="/#">About</Link>
             </div>
             <div className="col-1">
-                <Link to="/#">Login</Link>
+                <Link to="/login">Login</Link>
             </div>
             <div className="col-1">
                 <Link to="/mypage">Mypage</Link>
-            </div>
-            <div className="col-sm-1">
-                <a href="/#">Team</a>
-            </div>
-            <div className="col-sm-1">
-                <a href="/#">Mypage</a>
-            </div>
-            <div className="col-sm-1">
-                <a href="/#">Login</a>
             </div>
         </div>
     </div>

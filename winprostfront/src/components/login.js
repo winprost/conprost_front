@@ -12,14 +12,9 @@ const Regist = () => {
           <Form.Control type="string" placeholder="아이디를 입력해주세요." />
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group style={{marginTop:'30px'}} controlId="formBasicPassword">
           <Form.Label>비밀번호</Form.Label>
           <Form.Control type="password" placeholder="비밀번호는 8자리이상 입력해주세요." />
-        </Form.Group>
-
-        <Form.Group controlId="formBasicString">
-          <Form.Label>닉네임</Form.Label>
-          <Form.Control type="string" placeholder="닉네임을 입력해주세요." />
         </Form.Group>
 
         <Container style={{textAlign:'center',marginTop:'50px'}}>
