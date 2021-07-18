@@ -3,17 +3,16 @@ import bookmark from '../images/bookmark.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import Ripples from 'react-ripples'
-import './teamDetail.scss';
+import './projectDetail.scss';
 import user from '../images/profile.jpg';
 
-const ContestDetail = () => {
-    
+const projectDetail = () => {
 
     return (
 <div>
-    <div className="detail-contest">
-        <div className='detail-contestDetail'>
-            <h2 className="detail-contestName">프로젝트 소개</h2>
+    <div className="detail-project">
+        <div className='detail-projectDetail'>
+            <h2 className="detail-projectName">프로젝트 소개</h2>
             <div className="detail-conData">
                 <p className="dataSub"> <span className="dataTitle">모집인원 </span> 2명 </p>
                 <p className="dataSub"> <span className="dataTitle">모집분야 </span>  프론트엔드, 서버 </p>
@@ -25,7 +24,7 @@ const ContestDetail = () => {
                 <div className="item">닉네임: </div>
                 <div className="item">생성날짜: </div>
             </div>
-            <div className="detail-contestPoster">
+            <div className="detail-projectPoster">
                 <div className="content">
                 </div>
             </div>
@@ -78,4 +77,4 @@ const ContestDetail = () => {
 
 
 
-export default ContestDetail;
+export default projectDetail;

@@ -75,32 +75,16 @@ function Dropdown(){
             <a href="#"> <strong>유승현</strong>님 안녕하세요! </a>
             </h5>
             <ul>
-            <li>
-                contents
-            </li>
-            <li>
-            <Link to="/contest">공모전</Link>
-            </li>
-            <li>
-                <a href="#">프로젝트</a>
-            </li>
+                <li>contents</li>
+                <li><Link to="/contest">공모전</Link></li>
+                <li><Link to="/projectList">프로젝트</Link></li>
             </ul>
             <ul>
-            <li>
-                Users
-            </li>
-            <li>
-                <a href="#">Front-end</a>
-            </li>
-            <li>
-                <a href="#">Server</a>
-            </li>
-            <li>
-                <a href="#">Android</a>
-            </li>
-            <li>
-                <a href="#">Ios</a>
-            </li>
+                <li>Users</li>
+                <li><a href="#">Front-end</a></li>
+                <li><a href="#">Server</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Ios</a></li>
             </ul>
 
         </dropdown>

@@ -11,7 +11,8 @@ import userList from '../components/userList';
 import TeamBoard from '../components/teamBoard';
 import ContestDetail from '../components/contestDetail';
 import Contest from '../components/contest';
-import teamDetail from '../components/teamDetail'
+import projectDetail from '../components/projectDetail'
+import projectList from '../components/projectList'
 
 const Pages = () =>{
   return (
@@ -25,7 +26,8 @@ const Pages = () =>{
       <Route exact path="/contestDe" component={ContestDetail} />
       <Route exact path="/contest" component={Contest} />
       <Route exact path="/userlist" component={userList} />
-      <Route exact path="/teamDetail" component={teamDetail} />
+      <Route exact path="/projectDetail" component={projectDetail} />
+      <Route exact path="/projectList" component={projectList} />
       </Layout>
     </Router>
   );

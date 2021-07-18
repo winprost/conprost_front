@@ -3,7 +3,7 @@
   box-sizing: border-box;
   
 }
-.detail-contest{
+.detail-project{
   width: 100%;
   margin:0 auto;
   margin-bottom: 30px;
@@ -22,12 +22,12 @@ h2,h4{
   padding-bottom: 20px;
 }
 
-.detail-contestDetail{
+.detail-projectDetail{
   max-width: 700px;
   margin: 50px auto;
 }
 
-.detail-contestPoster{
+.detail-projectPoster{
   height:100%;
   width: 100%;
   padding:20px;
@@ -41,7 +41,7 @@ h2,h4{
   }
 }
 
-.contestPoster img{
+.projectPoster img{
   width:100%;
   object-fit: cover;
 }
@@ -68,7 +68,7 @@ button a{
   margin-right: 10px;
   font-weight: 700;
 }
-.contestData button a{
+.projectData button a{
   padding :10px;
   border-radius: 5px;
   background-color: #FFBE58;
@@ -199,16 +199,16 @@ button a{
 
 @media screen and (max-width: 560px){
 
-  .contestContent{
+  .projectContent{
       display: flex;
       flex-direction: column;
       align-items: center;
   }
-  .contestPoster{
+  .projectPoster{
       margin-bottom: 30px;
       height: 300px;
   }
-  .contestData{
+  .projectData{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
