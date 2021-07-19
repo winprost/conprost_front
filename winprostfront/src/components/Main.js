@@ -15,7 +15,7 @@ const Main = ()=>{
             <div className="item">
               <img src={banner1} />
             </div>
-            <div className="item">
+            <div className="item" >
               <img src={banner2} />
             </div>
             <div className="item">
