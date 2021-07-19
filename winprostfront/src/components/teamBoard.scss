@@ -2,16 +2,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-.teamBoard{
-    margin: 30px;
+a,link, a:hover, a:focus, link:hover,link:focus{
+    color:black;
+    text-decoration: none;
 }
-  
+
+.teamBoard{
+    margin: 70px, 50px;
+}
+
 h2{
     font-weight: 700;
     color:#282c34;
 }
 
-.data{
+.teamData{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 7fr 200px;
@@ -117,7 +122,10 @@ article{
         display: flex;
         flex-direction: column;
     }
-
+    .noticeList{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     article{
         margin-left: 0;
     }
