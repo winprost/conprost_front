@@ -30,7 +30,6 @@ return (
                     : null
                 }
             </div>
-
             <a href="/" className="logo"> 
                 <img src={logo} alt="logo" width="150px"/> 
             </a>
