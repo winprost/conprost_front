@@ -2,7 +2,7 @@ import React from 'react';
 import bookmark from '../images/bookmark.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
-import Ripples from 'react-ripples'
+import Ripples from 'react-ripples';
 import './projectDetail.scss';
 import user from '../images/profile.jpg';
 

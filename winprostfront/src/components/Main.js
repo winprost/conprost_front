@@ -68,11 +68,11 @@ const Main = ()=>{
           
           <div className="header">
             <h2 className="projectTitle"> 프로젝트 </h2>
-            <Link to="/#" className="more">더보기</Link> 
+            <Link to="/projectList" className="more">더보기</Link> 
           </div>
           <div className="projectList">
               
-              <div className="projectCell">
+              <div to="/projectDetail" className="projectCell">
                 <div className="boxTitle">고양고양이 그리기 공모전</div>
                 <p className="boxContent">진짜 잘해볼 사람 구해요 우리팀 짱짱맨 들어올테면 들어와봐라</p>
                 <div className="bottom contest">

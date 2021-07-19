@@ -59,13 +59,13 @@ function Dropdown(){
             </h5>
             <ul>
                 <li>
-                    <Link to="/contest">찾아보기</Link>
+                    <Link to="/#">찾아보기</Link>
                 </li>
                 <li>
                     <Link to="/contest">공모전</Link>
                 </li>
                 <li>
-                    <Link to="/project">프로젝트</Link>
+                    <Link to="/projectList">프로젝트</Link>
                 </li>
             </ul>
             <ul>
