@@ -17,12 +17,12 @@ return (
 
 
 
-<div className='teamBoard'>
+<div className="teamBoard">
 
     <h2> 팀 게시판 입니다.</h2>
 
 
-    <div className="data">
+    <div className="teamData">
 
         <div className="noticeList">
             <div className="notice">

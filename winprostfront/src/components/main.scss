@@ -1,6 +1,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
+}
+a,link, a:hover, a:focus, link:hover,link:focus{
+    color:black;
+    text-decoration: none;
 }
 
 .pageList{
