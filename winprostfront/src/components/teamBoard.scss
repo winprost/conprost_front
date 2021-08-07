@@ -91,21 +91,26 @@ article{
     
 }
 
-
-.user-photo {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    border-radius: 25px;
-    border: 1px solid #eaeaea;
+@mixin photo{ 
+    .userPhoto {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 25px;
+        border: 1px solid #eaeaea;
+        
+        img{
+            
+            width: 30px;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            
+        }
+    }
 }
 
-.user-photo img{
-    width: 50px;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
+@include photo;
 
 .user-data{
     margin-left: 10px;

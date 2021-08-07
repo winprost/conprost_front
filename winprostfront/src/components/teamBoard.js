@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import profile1 from '../images/profile.jpg';
 import bookmark from '../images/bookmark.png';
 import comment from '../images/comment.png';
+import Teamtask from './detailTeamTask';
 import './teamBoard.scss';
 import { Profiler } from 'react';
+
+import Layout from './Layout';
 
 
 
@@ -35,7 +39,6 @@ return (
                     </div>
                     <div className="noticeAlignRight">
                         <span className="timeBefore">1시간 전 </span>
-                        <img src={bookmark}  alt="bookmark" />
                     </div>
                 </p>
             </div>
@@ -50,7 +53,6 @@ return (
                     </div>
                     <div className="noticeAlignRight">
                         <span className="timeBefore">1시간 전 </span>
-                        <img src={bookmark}  alt="bookmark" />
                     </div>
                 </p>
             </div>
@@ -76,8 +78,8 @@ return (
             <h4 className="teamTitle">팀원 </h4>
             <div className="teamMemberList">
                 <div className="teamMember">
-                    <div className="user-photo">
-                    <img src={profile1}  alt="user-profile-photo" />
+                    <div className="userPhoto">
+                        <img src={profile1}  alt="user-profile-photo" />
                     </div>   
                     <div className="user-data">
                         <h4 className="user-name">유승현</h4>
@@ -86,8 +88,8 @@ return (
                 </div>
 
                 <div className="teamMember">
-                    <div className="user-photo">
-                    <img src={profile1}  alt="user-profile-photo" />
+                    <div className="userPhoto">
+                        <img src={profile1}  alt="user-profile-photo" />
                     </div>   
                     <div className="user-data">
                         <h4 className="user-name">유승현</h4>
@@ -96,8 +98,8 @@ return (
                 </div>
 
                 <div className="teamMember">
-                    <div className="user-photo">
-                    <img src={profile1}  alt="user-profile-photo" />
+                    <div className="userPhoto">
+                        <img src={profile1}  alt="user-profile-photo" />
                     </div>   
                     <div className="user-data">
                         <h4 className="user-name">유승현</h4>
@@ -108,9 +110,8 @@ return (
         </article>
             
 
-    
-          
     </div>
+    <Teamtask/>
 
 
     <div className="rating">

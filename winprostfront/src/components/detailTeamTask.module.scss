@@ -1,0 +1,78 @@
+@import "teamBoard.scss";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.teamTask{
+    margin: 40px 20px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.comment{
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    max-width: 650px;
+
+}
+.profile{
+    display :flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.userPhoto{
+    @include photo;
+}
+
+.id{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.date{
+    font-size: 14px;
+    color: #888;
+}
+
+
+.tag{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+@mixin button {
+    padding: 3px 5px;
+    border : 2px solid #eee;
+    font-size: 12px;
+
+}
+
+.reply{
+    @include button;
+}
+
+.inputComment{
+    margin-top: 10px;
+    border : 1px solid #888;
+    padding : 20px 10px;
+    input{
+        width: 100%;
+        border : none;
+        font-size: 14px;
+
+    }
+}
+
+.post{
+    @include button();
+    position: relative;
+    left : 590px;
+    bottom: -10px;
+}
