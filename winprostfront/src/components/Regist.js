@@ -22,6 +22,16 @@ const Regist = () => {
           <Form.Control type="string" placeholder="닉네임을 입력해주세요." />
         </Form.Group>
 
+        <Form.Group controlId="formBasicString">
+          <Form.Label>스킬</Form.Label>
+          <Form.Control type="string" placeholder="사용 할 수 있는 스킬을 선택해주세요." />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicString">
+          <Form.Label>깃허브 아이디</Form.Label>
+          <Form.Control type="string" placeholder="깃허브 아이디를 입력해주세요." />
+        </Form.Group>
+
         <Container style={{textAlign:'center',marginTop:'50px'}}>
           <Button variant="warning" type="submit" height="2.25rem" 
           style={{width:"300px"}}>

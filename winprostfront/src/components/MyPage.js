@@ -1,5 +1,5 @@
 import React from 'react';
-import './myPage.css';
+import './myPage.scss';
 
 const MyPage = () => {
   return (
@@ -33,6 +33,11 @@ const MyPage = () => {
           <div class="flex-box"> 
             <div className="item">팀 목록:</div><div className="data">1팀</div>
           </div>        
+        </div>
+
+        <div className="button-flex">
+          <div clasName="bar"></div>
+          <button className="edit-btn">수정</button>
         </div>
       </div>
     </div>

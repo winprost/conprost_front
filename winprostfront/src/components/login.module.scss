@@ -1,0 +1,18 @@
+.iconBox{
+    margin: 0 auto;
+    max-width: 100px;
+    margin-top: 20px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .iconImg{
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+    }
+}

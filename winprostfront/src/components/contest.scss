@@ -1,51 +1,84 @@
 * {
-    margin: 0;
     box-sizing: border-box;
-}
-
-
-.contestPage{
-    margin: 50px auto;
-    max-width: 1000px;
-    padding: 0 80px;
-}
-
-
-.contestPageTitle{
-    font-size: 36px;
-    margin-bottom: 60px;
-}
-
-
-.project-bottom{
-    max-width: 200px;
-}
-
-.project-bottomRight{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
     width: 100%;
-    margin:20px 0px;
+    height: 100%;
+  }
+  
+  .nav-flex{
     display: flex;
-    justify-content:space-between;
-    .project-item{
-        overflow:hidden; 
-        text-overflow:ellipsis; 
-        white-space:nowrap;
-    }
-}
-
-.contestPageCell{
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.contestPageCell .bookmark{
-    height: 30px;
-    width: auto;
-}
-
-.topContest{
+  }
+  
+  .left{
+    flex:1;
+  }
+  
+  .nav-container{
+    width: 600px;
+    height: 50px;
+    margin-bottom: 70px;
+  }
+  
+  .nav-line{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100%;
     align-items: center;
-}
+    margin-bottom: 100px;
+    .item{
+      margin-right: 60px;
+    }
+  }
+  
+  .main-container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-flex{
+    max-width: 1400px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .apadding-item{
+      padding:10px;
+      width: 33.3%;
+      .item-box{
+          border-radius: 20px;
+          border: 1px solid #ccc;
+          display: flex;
+          height: 500px;
+          width: 100%;
+          flex-direction: column;
+          .thumb-nail{
+              height: 80%;
+              img{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+          }
+          .contest-box{
+              margin-top: 40px;
+              width: 100%;
+              height: 20%;
+          }
+      }
+    }
+  }
 
+  .contest-flex{
+      display: flex;
+      margin: 0 auto;
+      max-width: 200px;
+      justify-content: space-between;
+      align-items: center;
+  }

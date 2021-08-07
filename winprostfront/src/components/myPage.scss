@@ -75,6 +75,19 @@
   opacity: 1;
 }
 
+.button-flex{
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  .edit-btn{
+    margin-top:20px;
+    width: 100px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #FFBE58;
+  }
+}
+
 .data:hover{
   cursor: pointer;
   border-bottom: 1px solid black;

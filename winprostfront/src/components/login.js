@@ -2,6 +2,9 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import styles from './login.module.scss';
+import github from '../images/github.svg';
+import google from '../images/google.svg';
 
 const Regist = () => {
   return (
@@ -17,7 +20,14 @@ const Regist = () => {
           <Form.Control type="password" placeholder="비밀번호는 8자리이상 입력해주세요." />
         </Form.Group>
 
-        <Container style={{textAlign:'center',marginTop:'50px'}}>
+        <div className={styles.iconBox}>
+          <div className={styles.icon}>
+            <div className={styles.iconImg}><img src={github}></img></div>
+            <div className={styles.iconImg}><img src={google}></img></div>
+          </div>
+        </div>
+
+        <Container style={{textAlign:'center',marginTop:'20px'}}>
           <Button variant="warning" type="submit" height="2.25rem" 
           style={{width:"300px"}}>
             Submit
