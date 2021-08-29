@@ -1,9 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import bookmark from '../images/bookmark.png';
 import './projectList.scss';
+// import getProjectList from '../service/apiService';
+import {environment} from '../environments/environments.prod'
+import axios from 'axios'
+
 
 const ProjectList = () => {
-    
+
+    const [data, setData] = useState([]);
+
+
+    useEffect(()=>{
+        let completed = false;
+        const showProjectList = async ()=>{
+            try{
+                setData(null);
+                const res = await axios.get(`${environment.apiUrl}/projects/projectList`);
+                console.log(res.data);
+                if(!completed) {
+                    setData(data => res.data)
+                }
+                completed = true;
+            }
+            catch(e){
+                console.log(e);
+            }
+        }
+        
+        showProjectList();
+        return ()=>{
+            completed = true;
+        }
+    },[])
 
     return (
 
